@@ -63,10 +63,10 @@ For now, please refer to **i201819_ImamaAmjad_Ass3.pdf** for **dataset details, 
 
 ## Future Enhancements  
 - **Expand the README** with dataset preprocessing steps & model architecture explanations
-- **Add challenges faced and key learnings** section
-- **Improve model performance** by exploring **larger Vision Transformer variants** and **ResNet architectures**
-- **Include training results & sample classification outputs**
-- **Optimize model training even further with hyperparameter tuning**
+- Add **challenges faced and key learnings** section
+- Improve model performance by exploring **larger Vision Transformer variants** and **ResNet architectures**
+- Include training results & sample classification outputs
+- Optimize model training even further with hyperparameter tuning
 - Enhance the web application
 
 ---
