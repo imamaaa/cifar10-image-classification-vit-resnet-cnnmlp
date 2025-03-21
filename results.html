@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            margin-top: 30px;
+            color: #555;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            width: 200px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            border-radius: 4px;
+            max-width: 100%;
+            max-height: 300px;
+            height: auto;
+        }
+        p {
+            margin: 10px 0 0;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Classification Results</h1>
+    
+    <h2>Correct Classifications</h2>
+    <div class="container">
+        {% for image, label in correct %}
+        <div class="card">
+            <img src="/uploads/{{ image }}" alt="Correct Image">
+            <p>{{ label }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    
+    <h2>Incorrect Classifications</h2>
+    <div class="container">
+        {% for image, label in incorrect %}
+        <div class="card">
+            <img src="/uploads/{{ image }}" alt="Incorrect Image">
+            <p>{{ label }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
